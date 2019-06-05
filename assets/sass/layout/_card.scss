@@ -1,0 +1,32 @@
+.card {
+	padding: 2em;
+
+	&__container {
+		@extend .card__container;
+		width: 100%;
+    	max-width: 800px;
+    	margin: 0 auto;
+	}
+
+	&__img {
+		@extend .card__img;
+		max-width: 100%;
+
+	}
+
+	&__title {
+		text-align: center;
+		margin: .5em;
+		font-size: 2.5em;
+	}
+
+	&__text {
+		font-size: 1em;
+	}
+
+	&--gray-bg {
+		@extend .card;
+		background: $white;
+		color: $granite_gray;
+	}
+}

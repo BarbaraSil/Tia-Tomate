@@ -1,0 +1,44 @@
+.red_block {
+	background: $jelly_bean;
+	text-align: center;
+	color: $white;
+	padding: 2em;
+	font-weight: 700;
+	font-size: $large;
+
+	&--big-padding {
+		@extend .red_block;
+		padding: 5em 0;
+	}
+
+	&--small-padding {
+		@extend .red_block;
+		padding: .5em 0;
+	}
+
+	&__text {
+		text-transform: uppercase;
+
+		&--no-uppercase {
+			text-transform: none;
+		}
+
+		&--light {
+			@extend .red_block__text--no-uppercase;
+			display: block;
+			font-weight: 200;
+		}
+	}
+    
+    &__call-to-action {
+	    background-color: $white;
+	   	border-radius: 75px;
+	   	// display: inline-block;
+	   	border: none;
+	   	padding: .35em;
+	   	text-transform: uppercase;
+	   	font-size: .75em;
+	   	color: $granite_gray;
+	   	min-width: 400px;
+	}
+}
